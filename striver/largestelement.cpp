@@ -14,7 +14,7 @@
 //         sort(a, a + n);
 //         cout<<a[n-1];
 //     }
-// }
+// } 
 
 
 // 2> looping to find
