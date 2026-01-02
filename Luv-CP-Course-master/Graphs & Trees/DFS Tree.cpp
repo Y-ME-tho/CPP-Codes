@@ -51,7 +51,7 @@ void tree_dfs(int vertex, int parent){
 
 		depth[child] = depth[vertex]+1;
 		tree_dfs(child, vertex);
-		height[vertex] = max(height[vertext], height[child]+1);
+		height[vertex] = max(height[vertex], height[child]+1);
 	}
 }
 

@@ -46,7 +46,7 @@ bool loopDetect(int vertex, int parent){
 		if(vis[child])
 			return true;
 
-		isLoopDetected |= dfs(child, vertext);
+		isLoopDetected |= dfs(child, vertex);
 	}
 
 	return isLoopDetected;

@@ -11,7 +11,7 @@ int dp[N];
 // Longest increasing subsequence
 int LongestIncSubs(vector<int> &vec, int i){
 	if(dp[i] != -1)
-		return dp[j];
+		return dp[i];
 
 	int ans = 1;
 	for(int j=0; j<i; j++){
