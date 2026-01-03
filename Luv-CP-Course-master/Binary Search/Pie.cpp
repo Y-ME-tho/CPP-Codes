@@ -41,7 +41,7 @@ int main(){
 		freopen("input.txt", "r", stdin);
 		freopen("output.txt", "w", stdout);
 	#endif
-
+ 
 		int t;
 		cin>>t;
 

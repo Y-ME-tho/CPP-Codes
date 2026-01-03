@@ -1,0 +1,23 @@
+Binary Heap
+    Used in Heap Sort
+    Used to implement Priority Queue
+
+    Two Types
+        Min Heap : Highest priority item is assigned lowest value
+        Max Heap : Highest priority item is assigned highest value
+    
+A Binary Heap is a complete Binary Tree : All of its levels are completely filled, except
+possibly the last level, and in that also, the elements must be filled continuously from
+left to right, and shoudn't have any gaps between them.
+Every node has value that is smaller than its descendants. (value should increase as we go down)
+Min Heap is internally represented as an array ( The binary tree is just for representation
+here ).
+
+Operations on Min Heap :-
+1. getMin() : it returns the root element of min heap. T = O(1)
+2. extractMin() : Removes the minimum element from minheap. T = O(Log(n)) as this operation 
+needs to maintain the heap properly (by calling heapify()) after removing root.
+3. decreaseKey() : decreases value of key. T = O(Logn). If the decreased key value of a node 
+is greater than the parent of the node, then we don't need to do anything. Otherwise, we need 
+to traverse up to fix the violated heap properly.
+4. insert() , delete() : T = O(Log(n)).
